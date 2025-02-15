@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD E-Commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f0c14b;
+        }
+        
+        
+        
+        .container {
+            max-width: 1500px;
+            margin: 20px auto;
+            padding: 50px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .price {
+            font-size: 18px;
+            color: #e60000;
+            font-weight: bold;
+        }
+        .button-group {
+            margin-top: 10px;
+        }
+        .btn {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 120px;
+            margin: 5px;
+            font-size: 14px;
+        }
+        .add-to-cart {
+            background: #070704;
+            color: rgb(249, 243, 243);
+            width: 200px;
+        }
+        .buy-now {
+            background: #8d8278;
+            color: rgb(7, 7, 7);
+            width: 200px;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .prev { background: #000000; color: white; }
+        .next { background: #000000; color: white; }
+        .pagination button:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DD MART </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header><br>
+    <marquee direction="left"><font size="5" color="red" face="Bembo "><B>FLAT 50% OFF ON EACH PRODUCT</B></font></marquee>
+   
+   
+    
+  <div class="container">
+        <section class="product-grid">
+            <div class="product">
+                <img src="redmi.jpg" alt="mobile">
+                <div class="product-info">
+                    <h2>Redmi note 9</h2>
+                    <p class="price">₹13,999</p>
+                    <p><strike>₹27,999</strike></p>
+                    <p>⭐️⭐️⭐️⭐️☆</p>
+                    <div class="button-group">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn buy-now">Buy Now</button>
+                        <p align="center"><font size="2" >FREE Delivery by Tomorrow</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="iphone.webp" alt="Iphone 15 pro">
+                <div class="product-info">
+                    <h2>Iphone 15 pro</h2>
+                    <p class="price">₹1,59,999</p>
+                    <p><strike>₹3,19,998</strike></p>
+                    <p>⭐️⭐️⭐️⭐️☆</p>
+                    <div class="button-group">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn buy-now">Buy Now</button>
+                        <p align="center"><font size="2">FREE Delivery by Tomorrow</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="samsung s24.webp" alt="samsung">
+                <div class="product-info">
+                    <h2>Samsung s24</h2>
+                    <p class="price">₹1,29,999</p>
+                    <p><strike>₹2,59,998</strike></p>
+                    <p>⭐️⭐️⭐️⭐️☆</p>
+                    <div class="button-group">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn buy-now">Buy Now</button>
+                        <p align="center"><font size="2">FREE Delivery by Tomorrow</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="vivo.png" alt="vivo">
+                <div class="product-info">
+                    <h2>vivo v29</h2>
+                    <p class="price">₹29,999</p>
+                    <p><strike>₹59,998</strike></p>
+                    <p>⭐️⭐️⭐️☆☆</p>
+                    <div class="b utton-group">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn buy-now">Buy Now</button>
+                        <p align="center"><font size="2">FREE Delivery by Tomorrow</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="pixel.png" alt="pixel">
+                <div class="product-info">
+                    <h2>Pixel 8 Pro</h2>
+                    <p class="price">₹89,999</p>
+                    <p><strike>₹1,89,998</strike></p>
+                    <p>⭐️⭐️⭐️⭐️☆</p>
+                    <div class="button-group">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn buy-now">Buy Now</button>
+                        <p align="center"><font size="2">FREE Delivery by Tomorrow</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="oppo.png" alt="oppo">
+                <div class="product-info">
+                    <h2>Oppo Reno 11</h2>
+                    <p class="price">₹25,999</p>
+                    <p><strike>₹51,998</strike></p>
+                    <p>⭐️⭐️⭐️☆☆</p>
+                    <div class="button-group">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn buy-now">Buy Now</button>
+                        <p align="center"><font size="2">FREE Delivery by Tomorrow</font></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pagination">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+    <footer>
+        <center>
+            <p> DD E-Commerce Store</p>
+        </center>
+    </footer>
+</body>
+</html>
